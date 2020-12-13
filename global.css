@@ -1,0 +1,59 @@
+*, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.text-center {
+    font-weight: bold;
+    margin: 15px;
+}
+
+a {
+    font-weight: bold;
+    color: #881111;
+    border-radius: 20px;
+}
+
+a:hover {
+    background-color:  #881111;
+    color: white;
+    border-radius: 20px;
+}
+
+td {
+    padding: 0px;
+}
+
+.table>:not(caption)>*>* {
+    padding: 0px;
+    text-align: center;
+    align-items: middle;
+}
+
+.searchInput {
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+
+
+}
+
+.alert {
+    position: absolute;
+    z-index: 998;
+    top: 15px;
+    left: 15px;
+}
+
+.table #containerCFOP1 {
+    float: left;
+    text-align: center;
+    margin: 5px;
+}
+
+.table #containerCFOP2 {
+    float: left;
+    text-align: center;
+    margin: 5px;
+}

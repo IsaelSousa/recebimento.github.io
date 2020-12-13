@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Filterable Table -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <link rel="stylesheet" href="global.css">
+
+    <link rel="shortcut icon" href="https://icons.getbootstrap.com/icons/receipt-cutoff.svg" type="image/x-icon">
+
+    <title>Recebimento</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <h1 class="text-center texto">Recebimento Fiscal</h1>
+
+        <div class="alert alert-danger" id="texto1" role="alert" style="font-weight: bold;">
+            Custo
+        </div>
+
+        <div class="text-center">
+            <input type="text" class="searchInput text-center" id="myInput" placeholder="Search...">
+        </div>
+
+        <ul class="nav justify-content-center">
+            <li onmouseover="btnText('Custo')" onmouseout="btnText('Ativo')" class="w-5 p-2" class="nav-item">
+              <a class="nav-link active" href="index.html">Custo</a>
+            </li>
+            <li onmouseover="btnText('Despesa')" onmouseout="btnText('Ativo')" class="w-5 p-2" class="nav-item">
+              <a class="nav-link" href="desp.html">Despesa</a>
+            </li>
+            <li onmouseover="btnText('Ativo')" onmouseout="btnText('Ativo')" class="w-5 p-2" class="nav-item">
+              <a class="nav-link" href="ativo.html">Ativo</a>
+            </li>
+            <li onmouseover="btnText('CFOP')" onmouseout="btnText('Ativo')" class="w-5 p-2" class="nav-item">
+                <a class="nav-link" href="CFOP.html">CFOP</a>
+              </li>
+          </ul>
+
+        </div>
+
+        <div id="container">
+            <!-- Primeira Tabela -->
+                            <table class="table table-striped table-white">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Classificação Sintética: 15 - Informática</th>
+                                    <th scope="col">Grupo</th>
+                                    <th scope="col">Código</th>
+                                    <th scope="col">Descrição</th>
+                                    <th scope="col">Tipo de NF</th>
+                                    <th scope="col">CFOP</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable">
+                                <tr>
+                                    <td>511</td><td>AQUISICAO SOFTWARE</td><td>13204000002</td><td>SISTEMAS APLICATIVOS-SOFTWARE</td><td>NFS / FAT / RCB</td><td>1551/2551</td>
+                                </tr>
+                                <tr>
+                                    <td>285</td><td>EQUIPAMENTOS</td><td>13201000005</td><td>EQUIPAMENTOS</td><td>NFP / FAT/ RCB</td><td>1551/2551</td>    
+                                </tr>  
+                            </table> 
+            <!-- Segunda Tabela -->    
+                            <table class="table table-striped table-white ">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">Classificação Sintética: 25 - Aquisição de Ativo</th>
+                                    <th scope="col">Grupo</th>
+                                    <th scope="col">Código</th>
+                                    <th scope="col">Descrição</th>
+                                    <th scope="col">Tipo de NF</th>
+                                    <th scope="col">CFOP</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myTable">  
+                                <tr>
+                                    <td>377</td><td>MÓVEIS E UTENSÍLIOS</td><td>13201000007</td><td>MOVEIS E UTENSILIOS</td><td>NFP ATIVO</td><td>1551/2551</td>
+                                </tr>
+                                <tr>
+                                    <td>378</td><td>FERRAMENTAS</td><td>13201000009</td><td>FERRAMENTAS</td><td>NFP ATIVO</td><td>1551/2551</td>
+                                </tr>
+                                <tr>
+                                    <td>379</td><td>MÁQUINAS / EQUIPAMENTOS</td><td>13201000004</td><td>MAQUINAS APARELHOS E EQUIPAMEN</td><td>NFP ATIVO</td><td>1551/2551</td>  
+                                </tr>                                  
+
+
+</div>
+
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
