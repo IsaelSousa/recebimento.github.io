@@ -57,3 +57,41 @@ td {
     text-align: center;
     margin: 5px;
 }
+
+#removeSpaces #send-rm {
+    margin-bottom: 10px;
+}
+
+#button-rm {
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+}
+
+
+#block {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#length {
+    height: 27px;
+    width: 40px;
+    margin-left: 10px;
+    border: 0 none;
+    outline: 0;
+    background-color: #c2c2c2;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#content {
+    width: 420px;
+    height: 27px;
+    border: 0 none;
+    outline: 0;
+    outline-style: none;
+    margin-bottom: 10px;
+}
