@@ -28,7 +28,11 @@ $(document).ready(function () {
 
     var value = document.querySelector('#send-rm').value
 
-    var replace = value.replaceAll(" ", "").replaceAll(".", "")
+    function extractNumber(number){
+      return number ? number.replace(/\D/g, ''): number
+    }
+    
+    var replace = extractNumber(value)
     document.querySelector('#content').value = replace
 
     var contentvalue = document.querySelector('#content').value
