@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 
   function removeSpace() {
-    var i = 16;
+    var i = 6;
 
     var value = document.querySelector('#send-rm').value
 
