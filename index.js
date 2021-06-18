@@ -21,8 +21,9 @@ $(document).ready(function () {
   }
 
 
-
-
+  /**
+   * Remove Space Function
+   */
   function removeSpace() {
     var i = 6;
 
@@ -38,8 +39,7 @@ $(document).ready(function () {
     var contentvalue = document.querySelector('#content').value
     document.querySelector('#length').value = contentvalue.length
 
-      
-
+    
       var timer = setInterval(function(func) {
       i--;
       document.getElementById("relogio").value = i;
@@ -54,7 +54,8 @@ $(document).ready(function () {
     }, 1000);    
   }
 
-function showDescription() {
-  
+  function showOnOff(id) {
+    var div = document.getElementById(id);
+    var disp = div.style.display;
+    div.style.display = disp == 'inline' ? 'none' : 'inline';
 }
-
