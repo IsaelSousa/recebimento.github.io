@@ -58,4 +58,7 @@ $(document).ready(function () {
     var div = document.getElementById(id);
     var disp = div.style.display;
     div.style.display = disp == 'inline' ? 'none' : 'inline';
+    setTimeout(() => {
+      div.style.display = 'none';
+    }, 10000);
 }
